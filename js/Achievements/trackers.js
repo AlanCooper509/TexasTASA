@@ -559,7 +559,7 @@ function getSecret() {
 	if(status == ""){
 		document.write("hidden");
 	} else {
-		document.write("Discovered!<span style='float: right;'>...Too bad it only works on browser, at ~75% zoom :/</span>");
+		document.write("Discovered!<span style='float: right;'>New Content Coming Soon!</span>");
 	}
 }
 
