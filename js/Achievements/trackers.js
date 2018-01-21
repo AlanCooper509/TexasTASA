@@ -678,7 +678,7 @@ function checkCompleted(){
 		if(cval != ""){ officers++; }
 		x = String.fromCharCode(x.charCodeAt(0) + 1);
 	}
-	if(officers == 11){ document.getElementById("4.2").classList.add("complete"); checkpoint++;}
+	if(officers == 12){ document.getElementById("4.2").classList.add("complete"); checkpoint++;}
 	/* DISPLAY ASPIRING OFFICER ACHIEVEMENT IF IT IS INCOMPLETE; INTERACTS WITH COLLAPSIBLE ACCORDION CSS*/
 	if(checkpoint < 2){
 		myID = document.getElementsByClassName("panel aspire");
