@@ -351,7 +351,7 @@ function getApply() {
 
 function recordOfficer(x) {
 	/* Called within innerHTML upon page load:
-	/* <script type="text/javascript">recordOfficer([Character Input, A-K]);</script>
+	/* <script type="text/javascript">recordOfficer([Character Input, A-L]);</script>
 	/* On hover, triggers update of corresponding cookie with string "true";
 	/* Input corresponds to letter assigned to each officer position.
 	*/
@@ -369,7 +369,7 @@ function getOfficers() {
 	var officers = 0;
 	var x = "A";
 	var cookie;
-	while(x!="L"){
+	while(x!="M"){
 		cookie = getCookie("officer" + x);
 		if(cookie != ""){ officers++; }
 		x = String.fromCharCode(x.charCodeAt(0) + 1);
