@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Taiwanese American Students Association | Events</title>
+	<link rel="stylesheet" href="../public/global.css">
+	<link rel="shortcut icon" href="../public/favicon.ico">
+
+	<!-- RECORD USER ACHIEVEMENTS -->
+	<script src="../js/Achievements/trackers.js"></script>
+	<script src="../js/Achievements/cookies.js"></script>		
+</head>
+<body>
+	<div class="main-container" id="top">
+		<!-- HEADER STARTS HERE -->
+		<header>
+			<div class="wrap clearfix">
+				<a id="logo" href="/">
+					<img src="../images/logo/logo_inverse_2015.png" width="48px" height="48px">
+					<span class="highlight">Taiwanese <span class="white">American</span> Students <span class="white">Association</span> </span>
+				</a>
+				<ul class="main-nav">
+					<li><a class="nav-item" href="../views/about.html">About</a></li>
+					<li><a class="nav-item" href="../views/calendar.html">Calendar</a></li>
+					<li><a class="current-nav-item" href="../views/events.html">Events</a></li>
+				<!--<li><a class="nav-item" href="../views/alumni.html">Alumni</a></li>-->
+					<li><a class="nav-item" href="../views/family.html">Family</a></li>
+					<li><a class="nav-item" href="../views/food.html">Food</a></li>
+				</ul>
+			</div>
+		</header>
+
+		<!-- BODY CONTENT HERE -->
+		<div class="body-content wrap clearfix event load" id="main-container">
+			<div class="hero-image">
+				<div class="overlay right">
+					<div class="overlay-text">
+						TASA Assassins
+					</div>
+					<div class="triangle"></div>
+				</div>
+				<center><img src="../images/hero/101.jpg" alt=""></center>
+			</div>
+
+			<br><br>
+			<div class="row-container">
+			<span class="small-font wrap" style="letter-spacing: -1px;"><center>
+				<h1 class="title"> Killed in Action </h1>
+			</center></span>
+			<br><br>
+			<div class="about">
+				<div class="row-container">
+					<div class="row five">
+						<div class="portrait">
+							<img src="../images/portrait/black.jpg">
+							<img src="../images/portrait/black.jpg">
+						</div>
+						<div class="portrait">
+							<img src="../images/portrait/black.jpg">
+							<img src="../images/portrait/black.jpg">
+						</div>
+						<div class="portrait">
+							<img src="../images/portrait/black.jpg">
+							<img src="../images/portrait/black.jpg">
+						</div>
+						<div class="portrait">
+							<img src="../images/portrait/black.jpg">
+							<img src="../images/portrait/black.jpg">
+						</div>
+						<div class="portrait">
+							<img src="../images/portrait/black.jpg">
+							<img src="../images/portrait/black.jpg">
+						</div>
+					</div>
+				</div>
+			</div>
+		<div class="event-container">
+
+
+
+
+
+		<!-- FOOTER STARTS HERE -->
+		<footer>
+			<div class="wrap clearfix table">
+				<p class="footer-text">Taiwanese American Students Association 2015-2018</p>
+				<div class="social-icon">
+					<a href="https://www.facebook.com/texastasa">
+						<img onclick="recordMedia('fb');" src="../images/logo/facebook.png" alt="Facebook">
+					</a>
+					<a href="http://instagram.com/uttasa">
+						<img onclick="recordMedia('ig');" src="../images/logo/instagram.png" alt="Instagram">
+					</a>
+					<a href="http://www.youtube.com/channel/UC4tZCO4Es9JZaL4bm9lQPEw">
+						<img onclick="recordMedia('yt');" src="../images/logo/youtube.png" alt="Youtube">
+					</a>
+					<a href="https://twitter.com/uttasa">
+						<img onclick="recordMedia('tw');" src="../images/logo/twitter.png" alt="Twitter">
+					</a>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+<script src="../js/jquery-2.1.4.js"></script>
+<script type="text/javascript">
+	window.onload = function (){
+		var p = document.getElementById("main-container");
+		p.className = p.className + "ed";
+		console.log("done");
+
+		//Run My Click Counter!
+		document.getElementsByTagName("body")[0].onclick = recordClick;
+		//Record Page Visit!
+		recordVisit();
+		//Record Tab Visit!
+		recordTab();
+	}
+
+
+//Begin Event Tab stuff
+	function openEvents(evt, Name) {
+	var i, tabcontent, tablinks;
+	tabcontent = document.getElementsByClassName("tabcontent");
+	for(i=0;i<tabcontent.length;i++){
+		tabcontent[i].style.display="none";
+	}
+	tablinks=document.getElementsByClassName("tablinks");
+	for(i=0;i<tablinks.length;i++){
+		tablinks[i].className = tablinks[i].className.replace(" active","");
+	}
+	document.getElementById(Name).style.display= "block";
+	evt.currentTarget.className +=" active"
+	}
+
+
+	//End Event Tab stuff
+</script>	
+<script type="text/javascript">
+	  $('.fixJump').click( function(e) {
+	   e.preventDefault();
+	  });
+	</script>
+
+
+
+<script type="text/javascript">
+	$('a[href*=#]:not([href=#])').click(function() {
+		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') || location.hostname == this.hostname) {
+			var target = $(this.hash);
+			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			if (target.length) {
+				$('html,body').animate({
+					scrollTop: target.offset().top
+				}, 1000);
+				return false;
+			}
+		}
+	});
+</script>
+</html>
