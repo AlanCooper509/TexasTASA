@@ -671,14 +671,7 @@ function checkCompleted(){
 	cval = getCookie("applyTab");
 	if(cval != ""){ document.getElementById("4.1").classList.add("complete"); checkpoint++;}
 	/* Officer Hovers */
-	var officers = 0;
-	var x = "A";
-	while(x!="L"){
-		cval = getCookie("officer" + x);
-		if(cval != ""){ officers++; }
-		x = String.fromCharCode(x.charCodeAt(0) + 1);
-	}
-	if(officers == 12){ document.getElementById("4.2").classList.add("complete"); checkpoint++;}
+	if(document.getElementById("officerCount").innerHTML == 12){ document.getElementById("4.2").classList.add("complete"); checkpoint++; }
 	/* DISPLAY ASPIRING OFFICER ACHIEVEMENT IF IT IS INCOMPLETE; INTERACTS WITH COLLAPSIBLE ACCORDION CSS*/
 	if(checkpoint < 2){
 		myID = document.getElementsByClassName("panel aspire");
