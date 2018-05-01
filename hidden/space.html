@@ -12,8 +12,20 @@
   <!-- RECORD USER ACHIEVEMENTS -->
   <script src="../js/Achievements/trackers.js"></script>
   <script src="../js/Achievements/cookies.js"></script>
-
+  <style>
+  .Buttons {
+    color: white;
+    background-color: #DF272C;
+    border: none;
+    padding: 15px 32px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor:pointer;
+  }
+  </style>
 </head>
+
 <body>
   <div class="main-container" id="space">
 
@@ -36,10 +48,28 @@
     </header>
 
     <br>
-    <h1 style="min-height: 1000px; text-align: center;">
-      Congratulations! You found the secret page! There used to be a minigame here, but it had to be removed due to disk space constraints :(<br>
-      If you have any ideas or requests for this webpage, please let me know!<br><br>
-      <span style="color: #000000">web.uttasa@gmail.com</span>
+    <h1 style="min-height: 1000px; text-align: center; color: black; vertical-align: middle;">
+      <button type="button" id = "start" onclick="fadeIn(document.getElementById('first'), document.getElementById('start'));" class="Buttons">What is this?</button><br><br>
+      <div id = "first" hidden>
+        With the school year coming to a close... I just wanted to say<br><br>
+        <button type="button" id="b1" onclick="fadeIn(document.getElementById('second'), document.getElementById('b1'));" class="Buttons">Next</button><br><br>
+      </div>
+      <div id = "second" hidden>
+        <span style="font-size: 24px; color: red;">謝謝</span> Thank you for everything you did with TASA throughout the year, from start to finish.<br><br>
+        <button type="button" id="b2" onclick="fadeIn(document.getElementById('third'), document.getElementById('b2'));" class="Buttons">Next</button><br><br>
+      </div>
+      <div id = "third" hidden>
+        <span style="font-size: 24px; color: red;">家</span> TASA is our home. No matter what, I know we all want what is best for TASA.<br><br>
+        <button type="button" id="b3" onclick="fadeIn(document.getElementById('fourth'), document.getElementById('b3'));" class="Buttons">Next</button><br><br>
+      </div>
+      <div id = "fourth" hidden>
+        <span style="font-size: 24px; color: red;">朋友</span> Regardless of elections, let's all work together to make next year even more fun!</span><br><br><br>
+        <img src="../images/hidden/fday.jpg"><br>
+        <img src="../images/hidden/pball.jpg"><br>
+        <img src="../images/hidden/tot2018.jpg" style="height: 640px" align=center><br><br>
+        <span style="font-size: 24px; color: red;">和平</span> [Peace] <span style="font-size: 24px; color: red;">和平</span><br><br>
+        <img src="../images/hidden/peace.jpg"><br><br>
+      </div>
     </h1>
 
     <!-- FOOTER STARTS HERE -->
@@ -64,6 +94,20 @@
     //Record Page Visit!
     recordVisit();
   }
+
+function fadeIn(el, curr){
+  curr.style.display = "none";
+  el.style.opacity = 0;
+  el.style.display = "block";
+
+  (function fade() {
+    var val = parseFloat(el.style.opacity);
+    if ((val += 0.1) <= 1.0) {
+      el.style.opacity = val;
+      requestAnimationFrame(fade);
+    }
+  })();
+}
 </script>
 
 
