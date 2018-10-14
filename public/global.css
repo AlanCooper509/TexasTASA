@@ -1020,7 +1020,7 @@ footer .social-icon img{
 
 
 #credit {
-	padding: 550px 100px 25px;
+	padding: 300px 100px 300px;
 	background: linear-gradient(to bottom, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.80) 30%, rgba(0,0,0,0.6) 100%),
 		url("../images/credit.jpg") no-repeat center fixed;
 	background-size: cover;
