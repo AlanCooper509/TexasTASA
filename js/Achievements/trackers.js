@@ -269,10 +269,11 @@ function recordTab() {
 	} else if (location.pathname.substring(location.pathname.lastIndexOf("/") + 1) == "family.html"){
 		var family = true;
 		setCookie("familyTab", family, expdate, "/");
-	} else if (location.pathname.substring(location.pathname.lastIndexOf("/") + 1) == "food.html"){
-		var food = true;
-		setCookie("foodTab", food, expdate, "/");
 	}
+	// else if (location.pathname.substring(location.pathname.lastIndexOf("/") + 1) == "food.html"){
+	// 	var food = true;
+	// 	setCookie("foodTab", food, expdate, "/");
+	// }
 }
 
 function getTabs() {
@@ -651,10 +652,10 @@ function checkCompleted(){
 	if(cval != ""){ document.getElementById("3.4").classList.add("complete"); checkpoint++;}
 	cval = getCookie("familyTab");
 	if(cval != ""){ document.getElementById("3.5").classList.add("complete"); checkpoint++;}
-	cval = getCookie("foodTab");
-	if(cval != ""){ document.getElementById("3.6").classList.add("complete"); checkpoint++;}
+	// cval = getCookie("foodTab");
+	// if(cval != ""){ document.getElementById("3.6").classList.add("complete"); checkpoint++;}
 	/* DISPLAY EXPLORER ACHIEVEMENT IF IT IS INCOMPLETE; INTERACTS WITH COLLAPSIBLE ACCORDION CSS*/
-	if(checkpoint < 6){
+	if(checkpoint < 5){
 		myID = document.getElementsByClassName("panel explorer");
 		myID[0].style.display = "block";
 		myID[0].style.opacity = "1";
