@@ -370,7 +370,7 @@ function getOfficers() {
 	var officers = 0;
 	var x = "A";
 	var cookie;
-	while(x!="L"){
+	while(x!="K"){
 		cookie = getCookie("officer" + x);
 		if(cookie != ""){ officers++; }
 		x = String.fromCharCode(x.charCodeAt(0) + 1);
@@ -672,7 +672,7 @@ function checkCompleted(){
 	cval = getCookie("applyTab");
 	if(cval != ""){ document.getElementById("4.1").classList.add("complete"); checkpoint++;}
 	/* Officer Hovers */
-	if(document.getElementById("officerCount").innerHTML == 11){ document.getElementById("4.2").classList.add("complete"); checkpoint++; }
+	if(document.getElementById("officerCount").innerHTML == 10){ document.getElementById("4.2").classList.add("complete"); checkpoint++; }
 	/* DISPLAY ASPIRING OFFICER ACHIEVEMENT IF IT IS INCOMPLETE; INTERACTS WITH COLLAPSIBLE ACCORDION CSS*/
 	if(checkpoint < 2){
 		myID = document.getElementsByClassName("panel aspire");
