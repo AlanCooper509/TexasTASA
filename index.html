@@ -11,6 +11,17 @@
 <!-- RECORD USER ACHIEVEMENTS -->
 <script src="js/Achievements/trackers.js"></script>
 <script src="js/Achievements/cookies.js"></script>
+<script>
+	function expires( id, date )
+	{
+		var curr = new Date();
+		var exp = new Date( date );
+		if( curr.getTime() > exp.getTime() )
+		{
+			document.getElementById( id ).style.display = "none";
+		}
+	}
+</script>
 
 <style>
 /***Home Slide Show Style***/
@@ -60,7 +71,6 @@
 }
 </style>
 </head>
-
 <body>
 	<div class="main-container">
 
@@ -111,7 +121,7 @@
 			<div class="overview-container">
 				<div class="table clearfix">
 					<div class="single">
-						<!-- Featured Video-->
+						<!-- Featured Video -->
 						<div class="section">Featured <span class="highlight"><a href="http://www.youtube.com/channel/UC4tZCO4Es9JZaL4bm9lQPEw">Video</a></span></div>
 
 						<iframe width="560" height="315" src="https://www.youtube.com/embed/FVHbg3u619c" frameborder="0" allowfullscreen id="video"></iframe>
@@ -125,37 +135,23 @@
 						</div>
 						<br><br>
 
+						<!-- Upcoming Events -->
 						<div class="section">Upcoming <span class="highlight"><a href="views/events.html">Events</a></span></div>
 
-						<!-- Event: Winter Banquet -->
-						<div class="overview-list-item clearfix" id="winterbanquet">
+						<!-- Event: New Semester -->
+						<div class="overview-list-item clearfix" id="newsemester">
+							<script>expires( "newsemester", "1/22/19 9:00" );</script>
 							<img src="images/icon/bubble.png">
 							<h2 class="title"><a href = "">
-								Have a great year!<br></a>
+								New Semester!<br></a>
 								<span class="small-font light highlight" style="letter-spacing: -1px;">
-									From everyone in TASA&emsp;&emsp;&emsp;<span class="small-font light" style="letter-spacing: -1px; color: black;"></span>
+									Jan 22&emsp;&emsp;&emsp;<span class="small-font light" style="letter-spacing: -1px; color: black;">UT Austin</span>
 								</span>
 							</h2>
 							<p class="subtext">
-							
+								Texas Tasa will be back with more events next semester! In the meantime, check out some of our awesome <span class="light highlight"><strong><a href ="views/events.html#f18">EVENTS</a></strong></span> from last semester!
 							</p>
 						</div>
-
-						<!-- Event: Trail of Lights 
-						<div class="overview-list-item clearfix" id="trailoflights">
-							<img src="images/icon/polaroids.png">
-							<h2 class="title"><a href = "https://www.facebook.com/events/2033884806706187/">
-								TASA Trail of Lights<br></a>
-								<span class="small-font light highlight" style="letter-spacing: -1px;">
-									Dec 11th, 7:30PM &emsp;&emsp;&emsp;<span class="small-font light" style="letter-spacing: -1px; color: black;">Zilker Park</span>
-								</span>
-							</h2>
-							<p class="subtext">
-								It's TASA's last social of the year! Come out to enjoy the holiday lights with your TASA family! Please sign up by December 9th at 11:59 pm!
-								Sign up <span class"light highlight"><strong><a href = "https://goo.gl/forms/gLPndrewdBuTCt4R2">HERE</a></strong></span><br>
-								Look <span class="light highlight"><strong><a href = "https://www.facebook.com/events/1687544228016678/">HERE</a></strong></span> for more information!<br>
-							</p>
-						</div> -->
 
 						<!-- Event: GM #8
 						<div class="overview-list-item clearfix" id="GM8">
@@ -171,56 +167,7 @@
 								Look <span class="light highlight"><strong><a href = "https://www.facebook.com/events/1687544228016678/">HERE</a></strong></span> for more information!<br>
 							</p>
 						</div>
-						-->
-						
-
-						<!-- Event: Tea Haus
-						<div class="overview-list-item clearfix" id="tea">
-							<img src="images/icon/bubble.png">
-							<h2 class="title"><a href = "https://www.facebook.com/events/589007334778508/">
-								Tea Haus Fundraiser!<br></a>
-								<span class="small-font light highlight" style="letter-spacing: -1px;">
-									FRIDAYS ♥ 11AM - 2PM ♥ &emsp;&emsp;&emsp;&emsp;&nbsp;
-								</span>
-								<span class="small-font light" style="letter-spacing: -1px; color: black;">
-									Jester Center
-								</span>	
-							</h2>
-							<p class="subtext">
-							Heard about the craze with Tea Haus but have no way of getting there?
-							Don't fear because WE ARE BRINGING BACK TEA HAUS TO YOU! We'll be selling Tea Haus' Boba Milk Tea every Friday!
-							<span class="light highlight"><strong> 1 for $3</strong></span> and <span class="light highlight"><strong>2 for $5!</strong></span><br>
-							Look <span class="light highlight"><strong><a href = "https://www.facebook.com/events/589007334778508/">HERE</a></strong></span> for more information!<br>
-							</p>
-						</div>
-						-->
-
-						<!-- Assassins
-						<div class="overview-list-item clearfix" id="assassins">
-							<img src="../images/icon/ninja.jpg">
-							<h2 class="title"><a href="./views/assassins.html">
-								TASA Assassins<br></a>
-							</h2>
-							<p class="subtext">
-								Time to put your stalking skills to good use! In this game, players try to eliminate each other using mock weapons in an effort to be the last surviving player!<br>
-							Look <span class="light highlight"><strong><a href = "views/assassins.html"> HERE </a></strong></span> for more information!<br>
-							</p>
-						</div>
-						-->
-
-						<!-- Event: Elections
-						<div class="overview-list-item clearfix" id="elections">
-							<img src="images/icon/dev.png">
-							<h2 class="title"><a href = "hidden/space.html">
-								SECRET ACHIEVEMENT<br></a>
-							</h2>
-							<p class="subtext">
-								A brand new secret achievement page.<br>
-							Look <span class="light highlight"><strong><a href = "hidden/space.html">HERE</a></strong></span> for more information!<br>
-							</p>
-						</div>
-						-->
-						
+						-->						
 					</div>
 				</div>
 

@@ -490,7 +490,9 @@
 		</footer>
 	</div>
 </body>
+
 <script src="../js/jquery-2.1.4.js"></script>
+
 <script type="text/javascript">
 	window.onload = function (){
 		var p = document.getElementById("main-container");
@@ -505,8 +507,7 @@
 		recordTab();
 	}
 
-
-//Begin Event Tab stuff
+	//Begin Event Tab stuff
 	function openEvents(evt, Name) {
 	var i, tabcontent, tablinks;
 	tabcontent = document.getElementsByClassName("tabcontent");
@@ -520,17 +521,14 @@
 	document.getElementById(Name).style.display= "block";
 	evt.currentTarget.className +=" active"
 	}
-
-
 	//End Event Tab stuff
-</script>	
+</script>
+
 <script type="text/javascript">
-	  $('.fixJump').click( function(e) {
-	   e.preventDefault();
-	  });
-	</script>
-
-
+	$('.fixJump').click( function(e) {
+		e.preventDefault();
+	});
+</script>
 
 <script type="text/javascript">
 	$('a[href*=#]:not([href=#])').click(function() {
