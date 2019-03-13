@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Taiwanese American Students Association | Scavenger Hunt</title>
+	<link rel="stylesheet" href="../public/global.css">
+	<link rel="shortcut icon" href="../public/favicon.ico">
+	
+	<!-- RECORD USER ACHIEVEMENTS -->
+	<script src="../js/Achievements/trackers.js"></script>
+	<script src="../js/Achievements/cookies.js"></script>		
+</head>
+<body>
+	<div class="main-container">
+
+		<!-- HEADER STARTS HERE -->
+		<header>
+			<div class="wrap clearfix">
+				<a id="logo" href="/">
+					<img src="../images/logo/logo_inverse_2015.png" width="48px" height="48px">
+					<span class="highlight">Taiwanese <span class="white">American</span> Students <span class="white">Association</span> </span>
+				</a>
+				<ul class="main-nav">
+					<li><a class="nav-item" href="../views/about.html">About</a></li>
+					<li><a class="nav-item" href="../views/calendar.html">Calendar</a></li>
+					<li><a class="nav-item" href="../views/events.html">Events</a></li>
+					<li><a class="current-nav-item" href="../views/family.html">Family</a></li>
+					<li><a class="nav-item" href="../views/requirements.html">Requirements</a></li>
+					<li><a class="nav-item" href="../views/achievements.html">Achievements</a></li>
+				</ul>
+			</div>
+		</header>
+
+		<!-- BODY CONTENT STARTS HERE -->
+		<div class="body-content wrap clearfix home load" id="main-container">
+			<div class="overview-container">
+				<div class="table clearfix">
+					<div class="single">
+						<div class="section" style="display: inline-block; padding-left: 5%"> 
+							<span class="highlight">GM 12 Scavenger Hunt</span><br>
+						</div>
+						
+                        <div class="overview-list-item clearfix">
+							<ul class = "subtext" style="padding-left: 10%; color: black; font-size: 130%; width: 100%; line-height: 150%">
+								<li>Stack 10 Lucky Charms on a flat surface</li>
+								<li>Take a picture of 3+ team members making a 4 leaf clover</li>
+								<li>Take a picture of a green rock in JGB</li>
+								<li>Take a group photo with your horns up \m/</li>
+								<li>Take a photo with someone wearing green</li>
+								<li>Take a picture of your group lifting a family head off the ground</li>
+								<li>Use utensils to pick up all unique Lucky Charm marshmallows with Alan</li>
+								<li>Shuffle all Lucky Charms from one bottle to the other with Alan</li>
+								<li>Beat Lillianne in rock paper scissors (best 2 out of 3)</li>
+								<li>Solve one of Irene’s riddles to her satisfaction (D+ or better)</li>
+								<li>Present a limerick about Stephen to his satisfaction (D+ or better)</li>
+								<li>Draw a leprechaun on paper to Linh’s satisfaction (D+ or better)</li>
+								<li>Perform a group dance for Ben Chaiprasert to his satisfaction (D+ or better)</li>
+								<li>Draw Ireland on the whiteboard and take a group picture in front of it</li>
+								<li>Write “good fortune” in Chinese on the whiteboard and sign it as a team</li>
+								<li>Find 1 of 5 gold coins scattered somewhere in the first floor of JGB</li>
+								<li>Hide 1 of 5 gold coins with an officer</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- FOOTER STARTS HERE -->
+		<footer>
+			<div class="wrap clearfix table">
+				<p class="footer-text">Taiwanese American Students Association 2015-2019</p>
+				<div class="social-icon">
+					<a href="https://www.facebook.com/texastasa">
+						<img onclick="recordMedia('fb');" src="../images/logo/facebook.png" alt="Facebook">
+					</a>
+					<a href="http://instagram.com/uttasa">
+						<img onclick="recordMedia('ig');" src="../images/logo/instagram.png" alt="Instagram">
+					</a>
+					<a href="http://www.youtube.com/channel/UC4tZCO4Es9JZaL4bm9lQPEw">
+						<img onclick="recordMedia('yt');" src="../images/logo/youtube.png" alt="Youtube">
+					</a>
+					<a href="https://twitter.com/uttasa">
+						<img onclick="recordMedia('tw');" src="../images/logo/twitter.png" alt="Twitter">
+					</a>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+<script type="text/javascript">
+	window.onload = function (){
+		var p = document.getElementById("main-container");
+		p.className = p.className + "ed";
+		console.log("done");
+
+		//Run My Click Counter!
+		document.getElementsByTagName("body")[0].onclick = recordClick;
+		//Record Page Visit!
+		recordVisit();
+		//Record Tab Visit!
+		recordTab();
+	}
+</script>
+</html>
+
+
